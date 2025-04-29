@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "Masonry",
     platforms: [
-        .iOS(.v9)
+        .iOS(.v13)
     ],
     products: [
         .library(
@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .target(
             name: "Masonry",
-            path: "Masonry", // this is the subfolder that holds all .h/.m files
-            publicHeadersPath: ".", // exposes all headers
+            path: "Masonry",
+            publicHeadersPath: nil,
             cSettings: [
                 .headerSearchPath(".")
             ]
