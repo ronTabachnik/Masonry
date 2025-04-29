@@ -16,7 +16,7 @@ let package = Package(
         .target(
             name: "Masonry",
             path: "Masonry",
-            publicHeadersPath: nil,
+            publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath(".")
             ]
